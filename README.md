@@ -1,2 +1,2 @@
-# august_duncan_website
-personal website
+# august duncan's website
+oh hello hello
