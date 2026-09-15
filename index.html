@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>august duncan</title>
+
+        <style>
+            @font-face {
+                font-family: 'pixel_header';
+                src: url('aspects/IllusionBook-Regular.ttf') format('truetype'); 
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            html, body {
+                min-height: 100vh; 
+                margin: 0;
+                padding: 0;
+                background-color: black; 
+                color: whitesmoke;
+                display: grid;
+                cursor: url('aspects/bigger_square.png'), auto;
+                scroll-behavior: smooth;
+            }
+
+            .page-content {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-top: 20px;
+            }
+
+            a, button {
+                cursor: pointer; 
+                color: black;
+                text-decoration: none;
+            }
+
+            header {
+                font-family: 'pixel_header';
+                width: 100vw;
+                height: 100vh;
+                background-color: whitesmoke;
+                color: black;
+            }
+
+            h1{
+                font-family: 'pixel_header';
+                size: 70px;
+            }
+
+            h2{
+                font-family: 'pixel_header';
+                margin-left: 50px;
+                size: 60px;
+            }
+
+            p{
+                font-family:  "Lucida Sans Typewriter", "Lucida Console", monospace;
+                margin-left: 50px;
+                margin-right: 20px;
+                size: 25px;
+            }
+
+            .in-line {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .nav-bar {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 45px;
+                margin-top: 15px;
+                font-size: 15px;
+                gap: 15px;
+            }
+
+
+        </style>
+
+        <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+
+        <audio id="my_audio" src="aspects/itemzelda.mp3"></audio>
+
+
+        <script>
+            window.addEventListener("load", (event) => {
+                new cursoreffects.ghostCursor(
+                    {image: "aspects/bigger_square.png"}
+                );
+            });
+
+            window.onload = function() {
+                document.getElementById("my_audio").play();
+            }
+        </script>
+
+    </head>
+
+    <body>
+    <header>
+    
+        <div, class = "nav-bar"> 
+
+        <h2> <a href="#projects-header"> projects </a> </h2>
+        <h2> <a href="#collaborations"> collaborations </a> </h2>
+        <h2> <a href="#resume"> resume </a> </h2>
+        <h2> <a href="#about", style="white-space: nowrap;"> about me </a> </h2>
+
+        </div>
+
+
+        <h1 style = "font-size: 90px; position: absolute; top: 290px; left: 150px; white-space: nowrap;"> august duncan </h1>
+        <img src = "aspects/spiral.gif", width = "600px", style="position: absolute; bottom: 0; right: 0;"> 
+
+    </header>
+
+    <main class="page-content">
+
+        <h1 id = "projects-header"> my projects </h1>
+
+    <div class = "in-line">
+    <h2> e. coli estimator </h2>
+    <a href = "https://augustduncan.github.io/WWC-E-Coli-Regression/"> 
+        <img src="aspects/star2.png", width = "30px", style="filter: invert(100%);"> 
+    <a href = "https://github.com/augustduncan/WWC-E-Coli-Regression"> 
+        <img src="aspects/github.png", width = "30px"> 
+    </a> 
+    </div>
+    <p> a dashboard running logarithmic linear regression models every day to predict the e. coli levels at local 
+        swimming spots throughout western north carolina. working with samples from Mountain True 
+        and accessing USGS data.  </p>
+
+    <br>
+
+    <div class = "in-line">
+    <h2> historical and geographical analysis of lakes in upstate SC </h2>
+    <a href = "https://storymaps.arcgis.com/stories/3d79c7af7e60453a9288a7df6efd78ad"> 
+        <img src="aspects/star2.png", width = "30px", style="filter: invert(100%);"> 
+    </a> 
+    </div>
+    <p> analysis of the history and impacts of the flooding of lakes Jocassee, Keowee, and Hartwell using 
+        georeferencing techniques to reveal what was there before.   </p>
+
+    <br>
+
+    <h2> in progress installation piece  </h2>
+    <p> interactive data visualization work that will be done in the next three weeks focusing on mapping 
+        human impact. it will be projected onto the swannanoa river! i also will have a piece in boom boom barns 
+        in a couple months that will be added here soon. (im sure itll also be data visualization)   </p>
+
+    <br>
+
+    <h2> my senior thesis </h2>
+    <p> this will be updated when i actually do it!  </p>
+
+    <br><br>
+
+    <h1 id = "collaborations"> my collaborations </h1>
+    
+    <div class = "in-line">
+    <h2> pension fund scraper </h2>
+    <a href = "https://github.com/christopher-potvin-wwc/IDI_pension_funds_scraping"> 
+        <img src="aspects/github.png", width = "30px"> 
+    </a> 
+    </div>
+    <p> collaborative scraping project with Warren Wilson students and professors to add foreign pension funds to 
+        Inclusive Development International's shareholder tracker. </p>
+
+    <br> <br>
+
+    <div class = "in-line">
+
+    <h1 id = "resume"> my resume </h1>
+    <a href = "aspects/resume.pdf"> 
+        <img src="aspects/star2.png", width = "40px", style="filter: invert(100%);"> 
+    </a>
+    </div>
+
+    <h1 id = "about"> about me </h1>
+
+    <div class="in-line", style="align-items:flex-start;">
+    <img src="aspects/bitmap.png", width = "265px">
+    <p> hi! i am a senior at Warren Wilson College, majoring in data science and minoring in math and art. <br><br> 
+        i am a blacksmithing crew lead and i'm always busy doing something or other. <br><br> 
+        in my free time i like to sew, bake, be outside, hyperfocus on a random aspect of technology 
+        (recently it has been 3D scanning objects or touchdesigner), be with my girlfriend, 
+        or watch criminal minds with my roommates.   </p>
+    </div>
+ 
+
+    </main>
+
+    <br> <br> <br> <br> 
+    <div class = "in-line", style = "font-size: 10px; margin-left: 50px;  margin-right: 80px;">
+    <p> note. this website was made entirely by me (august duncan (in case u didnt catch that)) with no template! 
+        however my mouse source code is from @tholman on github. <br> and shoutout to you for getting to the bottom!
+        send me feedback or whatever you desire at vedaduncan07@gmail.com</p>
+    <img src="aspects/star2.png", width = "40px", style="filter: invert(100%);"> 
+    </div>
+
+
+</body>
+</html>
